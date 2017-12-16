@@ -15,6 +15,7 @@
         <property name="configLocation" value="classpath:mybatisConfig.xml"/>
     </bean>
 
+    <!--直接获取mapper-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" >
         <property name="sqlSessionFactoryBeanName" value="sessionFactory"/>
         <property name="basePackage" value="com.bbq.mapper"/>
